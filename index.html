@@ -6,13 +6,10 @@
     <title>Food Delivery</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Reset some default styles */
         body, h1, h2, h3, p {
             margin: 0;
             padding: 0;
         }
-
-        /* Global styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
@@ -23,6 +20,10 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         header {
@@ -191,23 +192,22 @@
             </div>
 
             <div class="restaurant">
-                <h2>Restaurant Name</h2>
+                <h2>Restaurants</h2>
                 <div class="menu-item">
-                    <img src="download.jpg" alt="Item 1 Image">
-                    <p>Item 1 - $10</p>
+                    <li><a href="Chinese Restaurent.html"><img src="Chinese Noodles.jpg" alt="Cart" width="300" height="170"></a></li>
+                    <p>Classical Chinese Noodles - $10</p>
                     <button class="add-to-cart" data-item="Item 1" data-price="10">Add to Cart</button>
                 </div>
                 <div class="menu-item">
-                    <li><a href="Pizza restaurent.html"><img src="Pizza.jpeg" alt="Cart"></a></li>
-                    <p>Item 2 - $12</p>
+                    <li><a href="Pizza restaurent.html"><img src="Pizza.jpeg" alt="Cart" width="300" height="170"></a></li>
+                    <p>Peparoni Pizza - $12</p>
                     <button class="add-to-cart" data-item="Item 2" data-price="12">Add to Cart</button>
                 </div>
                 <div class="menu-item">
-                    <li><a href="Ramen restaurent.html"><img src="Ramen.jpeg" alt="Cart"></a></li>
-                    <p>Item 3 - $8</p>
+                    <li><a href="Ramen restaurent.html"><img src="Ramen.webp" alt="Cart" width="300" height="170"></a></li>
+                    <p>Classic Ramen - $8</p>
                     <button class="add-to-cart" data-item="Item 3" data-price="8">Add to Cart</button>
                 </div>
-                <!-- Add more menu items as needed -->
                 <button class="order-btn">Order Now</button>
             </div>
         </div>
