@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 1em;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav img {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .main-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 80%;
+        }
+
+        .offers {
+            overflow-x: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .offer-item {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .restaurant {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        .order-btn {
+            background: linear-gradient(45deg, #4caf50, #2196f3);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .order-btn:hover {
+            background: linear-gradient(45deg, #2196f3, #4caf50);
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Delivery Service</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="cart.html"><img src="Cart.png" alt="Cart"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <div class="content-container">
+            <div class="offers">
+                <div class="offer-item">
+                    <h3>🎉 Discount Alert!</h3>
+                    <p>Get a fantastic 20% off on all orders over $30! Use code: DISCOUNT20</p>
+                </div>
+                <div class="offer-item">
+                    <h3>🍔 Combo Bonanza</h3>
+                    <p>Buy one, get one free on selected combo meals! Don't miss out!</p>
+                </div>
+                <div class="offer-item">
+                    <h3>🌟 Special Treat</h3>
+                    <p>Special discounts available on family-sized orders! Treat the whole family today.</p>
+                </div>
+                <div class="offer-item">
+                    <h3>🕒 Happy Hour Delight</h3>
+                    <p>Enjoy fabulous discounted prices daily from 3 PM to 6 PM! Join us for happiness!</p>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <h2>Restaurant Name</h2>
+                <div class="menu-item">
+                    <img src="download.jpg" alt="Item 1 Image">
+                    <p>Item 1 - $10</p>
+                    <button class="add-to-cart" data-item="Item 1" data-price="10">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <li><a href="Pizza restaurent.html"><img src="Pizza.jpeg" alt="Cart"></a></li>
+                    <p>Item 2 - $12</p>
+                    <button class="add-to-cart" data-item="Item 2" data-price="12">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <li><a href="Ramen restaurent.html"><img src="Ramen.jpeg" alt="Cart"></a></li>
+                    <p>Item 3 - $8</p>
+                    <button class="add-to-cart" data-item="Item 3" data-price="8">Add to Cart</button>
+                </div>
+                <!-- Add more menu items as needed -->
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Food Delivery Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Restaurant</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('RamenBack.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 5px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .hero-content h2 {
+            font-size: 3em;
+            color: #fc0000;
+            background-image: linear-gradient(to right, #ff9800, #f44336);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            color: #fc0000;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .menu {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .menu h2 {
+            margin-bottom: 30px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 30px;
+            width: 280px;
+            transition: transform 0.3s ease-in-out;
+            background-color: rgba(250, 249, 246);
+        }
+
+        .menu-item {
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 50%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .cart-btn {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cart-btn:hover {
+            background-color: #d32f2f;
+        }
+        
+        .add-to-cart-btn {
+            margin-top: 10px; 
+            background-color: #4caf50;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #45a049;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 5px 2px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2px;
+            position: fixed;
+            bottom: 0;
+            background-color: #333;
+            color: white;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            animation: slideIn 1s ease-out;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ramen Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html"><button class="cart-btn">Go To Cart</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Ramen Delight</h2>
+            <p>Discover the art of authentic Japanese ramen!.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <<h2 style="color: gold;">Our Menu</h2>
+        <div class="menu-items">
+            <!-- Sample Menu Items -->
+            <div class="menu-item">
+                <img src="Pizza.jpeg" alt="Pizza 1">
+                <h3>Classic Ramen</h3>
+                <p>A traditional blend of flavors in a comforting bowl.</p>
+                <span class="price">$8</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="Pizza2.jpg" alt="Pizza 2">
+                <h3>Spicy Miso Ramen</h3>
+                <p>Rich, spicy miso broth with a kick!</p>
+                <span class="price">$12</span>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Reach out to us for orders, queries, or feedback!</p>
+        <p>&copy; 2023 Ramen Delight</p>
+    </footer>
+</body>
+</html>
